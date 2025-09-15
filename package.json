@@ -1,0 +1,21 @@
+{
+  "name": "wedonetrepoo",
+  "version": "1.0.0",
+  "description": "A Node.js application built with AI Studio for Azure deployment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'No build step required'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": ["azure", "nodejs", "web-app", "ai-studio"],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.x"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
