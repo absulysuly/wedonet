@@ -1,0 +1,39 @@
+{
+  "name": "wedonetrepoo",
+  "description": "A Node.js application built with AI Studio for multi-platform deployment",
+  "repository": "https://github.com/absulysuly/wedonet",
+  "logo": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/node-dot-js.svg",
+  "keywords": ["node", "express", "heroku", "api"],
+  "image": "heroku/nodejs",
+  "stack": "heroku-22",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "addons": [
+    {
+      "plan": "papertrail:choklad",
+      "as": "PAPERTRAIL"
+    }
+  ],
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "description": "Install only production dependencies",
+      "value": "true"
+    }
+  },
+  "scripts": {
+    "postdeploy": "echo 'Deployment completed successfully!'"
+  }
+}
