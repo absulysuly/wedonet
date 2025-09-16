@@ -1,25 +1,21 @@
 {
-  "name": "wedonetrepoo",
-  "version": "1.0.0",
-  "description": "A Node.js application built with AI Studio for Azure deployment",
-  "main": "server.js",
+  "name": "wedonet-freelancing-platform",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js",
-    "build": "echo 'No build step required'",
-    "test": "echo 'No tests specified'"
-  },
-  "keywords": ["azure", "nodejs", "web-app", "ai-studio"],
-  "author": "",
-  "license": "MIT",
-  "engines": {
-    "node": ">=20.x"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "serverless-http": "^3.2.0"
+    "@google/genai": "^1.19.0",
+    "react-dom": "^19.1.1",
+    "react": "^19.1.1"
   },
   "devDependencies": {
-    "netlify-cli": "^17.0.0"
+    "@types/node": "^22.14.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
   }
 }

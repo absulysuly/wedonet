@@ -1,0 +1,7 @@
+{
+  "name": "Wedonet Freelancing Platform",
+  "description": "A sophisticated freelancing platform that connects clients with talented freelancers in Iraq, featuring AI-powered matching and advanced search.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
